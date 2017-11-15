@@ -1,0 +1,17 @@
+{
+"manifest_version": 2,
+    "name": "Hacker? I hardly know her!",
+    "description": "Everytime there is a word of the form [verb]er add ([verb]er? I hardly know her!)",
+    "version": "0.1",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
